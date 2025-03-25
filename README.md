@@ -8,14 +8,14 @@ This project is an ETL pipeline which analyzes YouTube trending video data from 
 - Data is collected and stored in GCS buckets (`gs://youtube-trending-raw/raw/<country>/<timestamp>.json`).
 - A PySpark script processes this data, calculates metrics like duration in minutes and growth rate, etc., and writes the results to BigQuery (`youtube_trending.trending_videos`).
 
-## Setup
-1. **Google Cloud Project**: Ensure you have a Google Cloud project with billing enabled.
-2. **GCS Buckets**: Create the necessary GCS buckets:
-   - `gs://youtube-trending-raw` for raw data.
-   - `gs://dataproc-staging-us-central1-13060018848-l3ei8og8` for Dataproc staging.
-3. **BigQuery Dataset**: Create a BigQuery dataset named `youtube_trending`.
-4. **IAM Permissions**: Set up IAM roles as detailed in `/docs/iam_rules.md`.
-5. **Dataproc Cluster**: Create a Dataproc cluster to run the PySpark job.
+## **Project Components**
+The project consists of:
+1. **Ingester VM**: Collects YouTube trending data and writes it as JSON files to Google Cloud Storage (GCS).
+2. **Dataproc Cluster**: Processes raw data from GCS using PySpark and loads results into BigQuery.
+3. **GCS Buckets**:
+   - `gs://youtube-trending-raw`: Stores raw JSON data.
+   - `gs://dataproc-staging-us-central1-13060018848-l3ei8og8`: Temporary staging bucket for Dataproc.
+4. **BigQuery**: Stores processed data in the `youtube_trending.trending_videos` table.
 
 ## Running the Script
 1. **Upload Script**: Upload `scripts/process_youtube.py` to your Dataproc cluster or a GCS bucket accessible by the cluster.
