@@ -1,5 +1,5 @@
 # youtube-trending-analysis
-This project is an ETL pipeline which analyzes YouTube trending video data from YouTube API, processing it with PySpark on Dataproc. Raw JSON data is ingested into GCS, transformed to extract metrics like video duration and growth rate, etc., and stored in BigQuery for analysis and visualization using tableau. The pipeline provides insights into video trends, leveraging scalable cloud infrastructure.
+This project is an ETL pipeline which analyzes YouTube trending video data from YouTube API, processing it with PySpark on Dataproc. Raw JSON data is ingested into GCS, transformed to extract metrics like video duration and growth rate, etc., and stored in BigQuery for analysis and visualization using Tableau. The pipeline provides insights into video trends, leveraging scalable cloud infrastructure.
 
 ![a visual representation of the permissions flow between components](https://github.com/user-attachments/assets/da0c81d9-1950-4c5b-a03e-4b9d98cc767b)
 
