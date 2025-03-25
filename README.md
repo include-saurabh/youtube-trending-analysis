@@ -1,6 +1,9 @@
 # youtube-trending-analysis
 This project analyzes YouTube trending video data from YouTube API, processing it with PySpark on Dataproc. Raw JSON data is ingested into GCS, transformed to extract metrics like video duration and growth rate, etc., and stored in BigQuery for analysis and tableau for visualization. The pipeline provides insights into video trends, leveraging scalable cloud infrastructure.
 
+![a visual representation of the permissions flow between components](https://github.com/user-attachments/assets/da0c81d9-1950-4c5b-a03e-4b9d98cc767b)
+
+
 ## Overview
 - Data is collected and stored in GCS buckets (`gs://youtube-trending-raw/raw/<country>/<timestamp>.json`).
 - A PySpark script processes this data, calculates metrics like duration in minutes and growth rate, etc., and writes the results to BigQuery (`youtube_trending.trending_videos`).
