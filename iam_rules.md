@@ -38,5 +38,3 @@ The project consists of:
   - `BigQuery Data Editor`: Grants `bigquery.tables.create` and `bigquery.tables.updateData`.
 - **Service Account**:
   - Attached to the Dataproc cluster’s service account.
-
-### **Connected Graph of Permissions**
