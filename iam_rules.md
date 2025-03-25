@@ -2,15 +2,6 @@
 
 This section outlines the final IAM roles and policies required for the **YouTube Trending Analyzer** project, detailing what each component needs to function correctly.
 
-### **Project Components**
-The project consists of:
-1. **Ingester VM**: Collects YouTube trending data and writes it as JSON files to Google Cloud Storage (GCS).
-2. **Dataproc Cluster**: Processes raw data from GCS using PySpark and loads results into BigQuery.
-3. **GCS Buckets**:
-   - `gs://youtube-trending-raw`: Stores raw JSON data.
-   - `gs://dataproc-staging-us-central1-13060018848-l3ei8og8`: Temporary staging bucket for Dataproc.
-4. **BigQuery**: Stores processed data in the `youtube_trending.trending_videos` table.
-
 ### **IAM Roles**
 
 #### **1. Ingester VM**
