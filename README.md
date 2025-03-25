@@ -16,9 +16,4 @@ This project analyzes YouTube trending video data from YouTube API, processing i
 
 ## Running the Script
 1. **Upload Script**: Upload `scripts/process_youtube.py` to your Dataproc cluster or a GCS bucket accessible by the cluster.
-2. **Submit Job**: Use the Dataproc UI or `gcloud` command to submit the PySpark job:
-   ```bash
-   gcloud dataproc jobs submit pyspark \
-       --cluster=<cluster-name> \
-       --region=<region> \
-       gs://<path-to-script>/process_youtube.py
+2. **Submit Job**: Use the Dataproc UI or `gcloud` command to submit the PySpark job.
