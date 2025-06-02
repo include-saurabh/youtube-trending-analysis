@@ -46,6 +46,10 @@ This Tableau analysis examines the top 50 trending videos per country. The datas
   
 ![Screenshot 2025-05-11 103711](https://github.com/user-attachments/assets/135b4c47-7542-48b9-bd4d-31314d8b038a)
 
+## Tableau Dashboard
+
+<img width="802" alt="Dashboard 1" src="https://github.com/user-attachments/assets/c0c2d68e-7896-47d2-9abc-acb1802a8305" />
+
 
 ## Calculated Fields
 - **`Publish_Date`**  
